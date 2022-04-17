@@ -19,39 +19,36 @@ namespace homeWork2
                 Console.WriteLine("7'ye bolunur");
             }
 
-            else if (remainder < dividednumber -3 || remainder> dividednumber +4) // burada yaxin olan asagi ve yuxari regemlerini ortaya cixardiriq
+            else if (remainder <=dividednumber /2|| remainder> dividednumber /2) // burada yaxin olan asagi ve yuxari regemlerini ortaya cixardiriq
             {
-                Console.WriteLine("\n bolunmur, bolunen en yaxin asaqi reqem:  " + (DividedSN)+ "\n ve en yaxin yuxari reqem: " + DividedLN);// en yaxin asaqi deyeri ortaya cixardiriq
+                Console.WriteLine("\n bolunmur, bolunen en yaxin asaqi reqem:  " + (DividedSN) + "\n ve en yaxin yuxari reqem: " + DividedLN);// en yaxin asaqi deyeri ortaya cixardiriq
             }
 
 
 
             //burada ekrana tek tek neticeleri nece cixartmaq olardi onu gosterecem
             //
-
+            //
             //Console.Write("bir reqem daxil edin: ");
             //int number = Convert.ToInt32(Console.ReadLine()); //bir deyer veririk
             //int dividednumber = 7;//ve bir bolunen deyer elave edirik
             //int remainder = number % dividednumber; //bir qaliq yaradiriq
             //int DividedSN = number - remainder;
             //int DividedLN = number + dividednumber - remainder;
-
-
-            //if (remainder == 0) 
+            //if (remainder == 0)
             //{
             //    Console.WriteLine("7'ye bolunur");
             //}
-
-            //else if (remainder < dividednumber -3) 
+            //
+            //else if (remainder <= dividednumber / 2)
             //{
             //    Console.WriteLine("bolunmur, bolunen en yaxin asaqi reqem:  " + (DividedSN));
+            //}
             //
-            //
-            //
-            //else if (remainder > dividednumber +4)
+            //else if (remainder > dividednumber / 2)
             //{
             //    Console.WriteLine("bolunmur, bolunen en yaxin reqem:  " + (DividedLN));
-            //} 
+            //}
             //
             //
             //
@@ -62,24 +59,6 @@ namespace homeWork2
             //
             //
             //
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         }
     }
 }
