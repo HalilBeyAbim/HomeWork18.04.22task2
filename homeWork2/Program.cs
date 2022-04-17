@@ -6,27 +6,80 @@ namespace homeWork2
     {
         static void Main(string[] args)
         {
-            int number = 20;//bir deyer veririk
+            Console.Write("bir reqem daxil edin: ");
+            int number = Convert.ToInt32(Console.ReadLine()); //bir deyer veririk
             int dividednumber = 7;//ve bir bolunen deyer elave edirik
             int remainder = number % dividednumber; //bir qaliq yaradiriq
-            if (remainder==0 ) //eger qaliq beraberdirse 0'a her sey hazirdir demekdi
+            int DividedSN =  number - remainder; //kicik regemi tapmaq ucun bir hell
+            int DividedLN =number + dividednumber - remainder; //boyuk regemi tapmaq ucun bir hell
+
+
+            if (remainder == 0) //eger qaliq beraberdirse 0'a her sey hazirdir demekdi
             {
-                Console.WriteLine("bolunur");
+                Console.WriteLine("7'ye bolunur");
             }
 
-            else if(remainder<dividednumber/2) // qaliqin ortasini tapiriq
+            else if (remainder < dividednumber -3 || remainder> dividednumber +4) // burada yaxin olan asagi ve yuxari regemlerini ortaya cixardiriq
             {
-                
-                Console.WriteLine("bolunmur, bolunen en yaxin reqem:  " + (number-remainder));// en yaxin asaqi deyeri ortaya cixardiriq
+                Console.WriteLine("\n bolunmur, bolunen en yaxin asaqi reqem:  " + (DividedSN)+ "\n ve en yaxin yuxari reqem: " + DividedLN);// en yaxin asaqi deyeri ortaya cixardiriq
             }
-            else if (remainder == dividednumber / 2)
-            {
-                Console.WriteLine("eded iki terefin ortasindadir");// deyer eger iki deyerin ortadirsa 
-            }
-            else
-            {
-                Console.WriteLine("bolunmur, bolunen en yaxin reqem:  " + (number + dividednumber - remainder));//en yaxin ust deyerini ortaya cixardiriq
-            }
+
+
+
+            //burada ekrana tek tek neticeleri nece cixartmaq olardi onu gosterecem
+            //
+
+            //Console.Write("bir reqem daxil edin: ");
+            //int number = Convert.ToInt32(Console.ReadLine()); //bir deyer veririk
+            //int dividednumber = 7;//ve bir bolunen deyer elave edirik
+            //int remainder = number % dividednumber; //bir qaliq yaradiriq
+            //int DividedSN = number - remainder;
+            //int DividedLN = number + dividednumber - remainder;
+
+
+            //if (remainder == 0) 
+            //{
+            //    Console.WriteLine("7'ye bolunur");
+            //}
+
+            //else if (remainder < dividednumber -3) 
+            //{
+            //    Console.WriteLine("bolunmur, bolunen en yaxin asaqi reqem:  " + (DividedSN));
+            //
+            //
+            //
+            //else if (remainder > dividednumber +4)
+            //{
+            //    Console.WriteLine("bolunmur, bolunen en yaxin reqem:  " + (DividedLN));
+            //} 
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         }
     }
 }
